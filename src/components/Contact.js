@@ -13,7 +13,7 @@ function Contact() {
                 <span id="dayTime">4 a.m. - 12 a.m. (pst)</span>
                 <span id="weekTime">7 Days a week</span>
             </div>
-            <Link to="/" id="chatLink">
+            <Link id="chatLink">
                 <img src={ic_comment} alt="ic_comment"></img>
                 <span>Live Help</span>
             </Link>

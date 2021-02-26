@@ -12,27 +12,27 @@ function Navbar() {
         <>
             <div className="navbar">
                 <div className="narbar-container container">
-                    <Link to="/" className="navbar-logo">
+                    <Link className="navbar-logo">
                         <img src={logo} alt=""></img>
                     </Link>
                     <ul className="nav-menu">
                         <li className="nav-item">
-                            <Link to="/" className="nav-links">
+                            <Link className="nav-links">
                                 <img src={ic_search} alt=""></img>
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/" className="nav-links">
+                            <Link className="nav-links">
                                 <img src={ic_shopping_cart} alt=""></img>
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/" className="nav-links">
+                            <Link className="nav-links">
                                 <img src={ic_person} alt=""></img>
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/" className="nav-links">
+                            <Link className="nav-links">
                                 <img src={ic_menu} alt=""></img>
                             </Link>
                         </li>

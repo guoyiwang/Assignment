@@ -89,7 +89,7 @@ function Market() {
                     <div className="adTwoItem">
                         <span>Get Started Today</span>
                         <span>Become a <span className="boldWord">Platt Plus</span> Member.</span>
-                        <Link to="/" >
+                        <Link>
                             Learn More
                         </Link>
                     </div>
