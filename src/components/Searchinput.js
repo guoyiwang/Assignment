@@ -36,14 +36,15 @@ function Searchinput() {
     };
 
     const updatePokeDex = poke => {
+        console.log("gdd");
         setSearch(poke);
         setDisplay(false);
     }
         
     return (
         <div className="search-container">
-            <div className="auto-Container"> 
-                <div ref={wrapperRef} className="search-input">
+            <div ref={wrapperRef} className="auto-Container"> 
+                <div className="search-input">
                     <input 
                         id="auto" 
                         onClick={(event)=> {!(event.target.value==="") && setDisplay(!display)}} 
@@ -53,7 +54,7 @@ function Searchinput() {
                             setSearch(event.target.value); 
                             event.target.value==="" ? setDisplay(false) : setDisplay(true)
                             // !(event.target.value==="") && setDisplay(true);
-                            console.log(event.target.value, display);
+                            console.log(search);
                         }}
                     />
                     <button ></button>
