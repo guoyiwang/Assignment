@@ -133,6 +133,7 @@ function Market() {
                 <img src={app_get_banner} alt="app_get_banner"></img>
                 <span>Shop better, download the Platt App today</span>
             </div>
+            <div id="clearFormat"></div>
         </div>
     )
 }
