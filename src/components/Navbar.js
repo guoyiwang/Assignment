@@ -5,13 +5,14 @@ import ic_search from '../assets/ic/white/ic_search.png'
 import ic_shopping_cart from '../assets/ic/white/ic_shopping_cart.png'
 import ic_person from '../assets/ic/white/ic_person.png'
 import ic_menu from '../assets/ic/white/ic_menu.png'
-import './Navbar.css'
+import './Navbar.scss'
+import './global.scss'
 
 function Navbar() {
     return (
         <>
             <div className="navbar">
-                <div className="narbar-container container">
+                <div className="narbar-container">
                     <Link className="navbar-logo">
                         <img src={logo} alt=""></img>
                     </Link>

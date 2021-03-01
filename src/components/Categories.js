@@ -3,12 +3,11 @@ import ic_categories from '../assets/ic/black/ic_categories.png'
 import ic_playlist_add_check from '../assets/ic/black/ic_playlist_add_check.png'
 import ic_list from '../assets/ic/black/ic_list.png'
 import ic_chat from '../assets/ic/black/ic_chat.png'
-import ic_chat_active from '../assets/ic/green/ic_chat_active.png'
 import ic_check_circle from '../assets/ic/black/ic_check_circle.png'
 import ic_account from '../assets/ic/black/ic_account.png'
 import ic_place from '../assets/ic/black/ic_place.png'
 import ic_arrow_forward from '../assets/ic/black/ic_arrow_forward.png'
-import './Categories.css'
+import './Categories.scss'
 
 function Categories() {
     return (
@@ -29,13 +28,8 @@ function Categories() {
                     <span>My List</span>
                     <img className="ic_arrow_forward" src={ic_arrow_forward} alt="ic_arrow_forward"></img>
                 </div>
-                <div className="categoryItem" id="tabletViewCategory">
-                    <img src={ic_chat} alt="ic_chat"></img>
-                    <span>Live Help</span>
-                    <img className="ic_arrow_forward" src={ic_arrow_forward} alt="ic_arrow_forward"></img>
-                </div>
-                <div className="categoryItem" id="mobileViewCategory">
-                    <img src={ic_chat_active} alt="ic_chat"></img>
+                <div className="categoryItem">
+                    <img id="liveHelp" src={ic_chat} alt="ic_chat"></img>
                     <span>Live Help</span>
                     <img className="ic_arrow_forward" src={ic_arrow_forward} alt="ic_arrow_forward"></img>
                 </div>

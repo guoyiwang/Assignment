@@ -1,0 +1,87 @@
+@import "./global.scss";
+
+.search-container{
+    background: $darkGreen;
+    display: flex;
+    height: 50px;
+    .auto-Container {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 95%;
+        border-radius: 5px;
+        margin: 0 auto auto auto;
+        box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+        z-index: 9999;
+        .search-input {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            input{
+                width: 95%;
+                height: 24px;
+                border-radius: 2px;
+                border: none;
+                outline: none;
+                margin: 5px 0px 5px 15px;
+                padding: 0;
+            }
+            ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #d4d8cd;
+                opacity: 1; /* Firefox */
+            }
+              
+            :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #d4d8cd;
+            }
+            
+            ::-ms-input-placeholder { /* Microsoft Edge */
+            color: #d4d8cd;
+            }
+            button {
+                background-image: url(../assets/ic/black/ic_search.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                border: none;
+                background-color: white;
+                width: 24px;
+                height: 24px; 
+                margin: 5px 15px 5px 0px;
+                padding: 0;
+                cursor: pointer;
+            }
+        }
+        .optionContainer {
+            background-color: white;
+            display: block;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            .option {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 5px;
+                border: none;
+                outline: none;
+                margin: 0 20px 0 10px;
+                @include hover-active;
+                span {
+                    font-size: $fontSizeTablet + 4px;
+                    text-transform: capitalize;
+                }
+                img{
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .auto-Container button {
+        background-size: 12px;
+    }
+}

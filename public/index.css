@@ -1,10 +1,17 @@
 body {
     margin: 0px; 
     padding: 0px;
+    font-family: Poppins;
 }
 
 #root{
     display: flex;
     flex-direction: column;
+}
+
+@font-face{
+    font-family: 'Poppins', sans-serif;
+    src: local("./src/fonts/Poppins-Regular.ttf");
+    font-weight: normal;
 }
 

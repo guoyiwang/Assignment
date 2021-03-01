@@ -1,5 +1,5 @@
 import React, {useEffect, useState, useRef} from 'react'
-import './Searchinput.css'
+import './Searchinput.scss'
 
 function Searchinput() {
 
@@ -45,8 +45,7 @@ function Searchinput() {
         <div className="search-container">
             <div ref={wrapperRef} className="auto-Container"> 
                 <div className="search-input">
-                    <input 
-                        id="auto" 
+                    <input
                         onClick={(event)=> {!(event.target.value==="") && setDisplay(!display)}} 
                         placeholder="What are you looking for?"
                         value={search}

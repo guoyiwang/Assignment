@@ -1,0 +1,110 @@
+@import "./global.scss";
+
+.all_categories {
+    height: 150px;
+    z-index: 7000;
+    .header_categories {
+        width: 100%;
+        height: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        @include hover-active;
+    }
+    .container_categories{
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;*/
+        height: 67%; 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        .categoryItem{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #d4d8cd;
+            @include hover-active;
+        }
+    }    
+    img{
+        display: inline-block;
+    }
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        font-size: $fontSizeTablet;
+    }
+    .ic_arrow_forward {
+        display: none !important;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+    .all_categories {
+        height: 200px;
+        justify-content: center;
+        .header_categories {
+            width: 95%;
+            height: 20%;
+            /* background-color: red; */
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            margin: 0 auto 0 auto;
+            @include hover-active;
+        }
+        .container_categories{
+            display: flex;
+            flex-direction: column;
+            height: 80%;
+            justify-content: center;
+            align-items: center;
+            .categoryItem{
+                width: 95%;
+                height: 16.6%;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                border: none;
+                border-top: 1px solid #d4d8cd;
+                @include hover-active;
+                #liveHelp{
+                    content:url(../assets/ic/green/ic_chat_active.png);
+                }
+            }
+        }
+        
+        img{
+            display: inline-block;
+            position: relative;
+            left: 10px;
+            height: 16px;
+            width: 16px;
+        }
+        span{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: 70%;
+            position: absolute;
+            left: 50px;
+            font-size: $fontSizeTablet;
+            /* margin: 0 auto 0 auto; */
+        }
+        .ic_arrow_forward {
+            display: inline-block !important;
+            position: absolute !important;
+            left: 85% !important;
+            width: 8px !important;
+            height: 8px !important;
+        }
+    }
+    
+    
+}
+

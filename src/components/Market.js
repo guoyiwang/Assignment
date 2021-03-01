@@ -21,7 +21,7 @@ import ic_platt_u from '../assets/img/ic_platt_u.png'
 
 import app_get_banner from '../assets/panel/app_get_banner.png'
 
-import "./Market.css"
+import "./Market.scss"
 import { Link } from 'react-router-dom'
 
 function Market() {
@@ -82,7 +82,7 @@ function Market() {
             </div>
 
             <div className="adContainer">
-                <div className="adOne">
+                <div className="adOneTwo">
                     <div className="adOneItem">
                         <img src={platt_plus} alt="platt_plus"></img>
                     </div>

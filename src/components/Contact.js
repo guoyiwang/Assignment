@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Contact.css"
+import "./Contact.scss"
 import ic_comment from '../assets/ic/black/ic_comment.png'
 import { Link } from 'react-router-dom'
 

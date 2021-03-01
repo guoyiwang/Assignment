@@ -1,0 +1,12 @@
+$darkGreen: #008833;
+
+$greyWhite: #eeeeee;
+
+$fontSizeTablet: 14px;
+
+@mixin hover-active {
+    &:hover{
+        background-color: $greyWhite;
+    }
+}
+
